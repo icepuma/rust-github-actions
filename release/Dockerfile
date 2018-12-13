@@ -9,8 +9,7 @@ LABEL "repository"="https://github.com/icepuma/rust-github-actions"
 LABEL "homepage"="https://github.com/icepuma/rust-github-actions"
 LABEL "maintainer"="Stefan Ruzitschka <icepuma@godda.mn>"
 
-RUN apt update && apt install cmake -y && rm -rf /var/lib/apt/lists/*
-RUN cargo install release
+RUN cargo install cargo-release
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
