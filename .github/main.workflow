@@ -1,6 +1,6 @@
 workflow "Integration tests" {
   on = "push"
-  resolves = ["Build"]
+  resolves = ["Build", "Quickstart"]
 }
 
 action "Format" {
@@ -17,4 +17,8 @@ action "Clippy" {
 action "Build" {
   uses = "icepuma/rust-github-actions/build@master"
   needs = "Clippy"
+}
+
+action "Quickstart" {
+  uses = "icepuma/rust-github-actions/quickstart@master"
 }
