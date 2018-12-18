@@ -1,6 +1,20 @@
 # Rust github actions
 
-Github actions to deal with rust builds.
+[Github actions](https://developer.github.com/actions/) to deal with rust builds.
+
+There is a tag for each stable version for `rust >= 1.31.0` that can be referenced!
+
+## Quickstart
+```
+workflow "Quickstart" {
+  on = "push"
+  resolves = ["Quickstart"]
+}
+
+action "Quickstart" {
+  uses = "icepuma/rust-github-actions/quickstart@master"
+}
+```
 
 ## Example
 
