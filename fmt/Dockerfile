@@ -1,4 +1,4 @@
-FROM rust:1.31.0
+FROM rust:1.31.1
 
 LABEL "com.github.actions.name"="fmt"
 LABEL "com.github.actions.description"="Cargo fmt"
