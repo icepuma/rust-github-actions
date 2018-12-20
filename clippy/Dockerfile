@@ -1,4 +1,4 @@
-FROM rust:1.31.
+FROM rust:1.31.1
 
 LABEL "com.github.actions.name"="clippy"
 LABEL "com.github.actions.description"="Cargo clippy"
