@@ -12,5 +12,17 @@ then
   exit 78
 fi
 
+set +e
 echo "Run: cargo login ********** && cargo release $*"
-bash -c "cargo login $CARGO_TOKEN && cargo release $*"
+OUTPUT=$(bash -c "cargo login $CARGO_TOKEN && cargo release $*" 2>&1)
+
+echo $OUTPUT
+
+SUCCESS=$?
+set -e
+
+if [ $SUCCESS -eq 0 ]; then
+  exit 0
+fi
+
+# TODO: more error handling
