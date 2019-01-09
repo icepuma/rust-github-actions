@@ -11,6 +11,9 @@ To use different versions of rust you can reference the action via branch.
 - 1.31.0
 
 ## Quickstart
+
+Contains `fmt` & `clippy`. This action could be used to quickly bootstrap a rust project and its CI with `Github Actions`. 
+
 ```
 workflow "Quickstart" {
   on = "push"
