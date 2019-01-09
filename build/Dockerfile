@@ -1,4 +1,4 @@
-FROM rust:1.31.1
+FROM rust:1.31.0
 
 LABEL "com.github.actions.name"="build"
 LABEL "com.github.actions.description"="Cargo build"

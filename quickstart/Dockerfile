@@ -1,4 +1,4 @@
-FROM rust:1.31.1
+FROM rust:1.31.0
 
 LABEL "com.github.actions.name"="quickstart"
 LABEL "com.github.actions.description"="Quickstart: Checks against fmt, clippy, runs tests and builds a release binary!"
