@@ -2,7 +2,13 @@
 
 [Github actions](https://developer.github.com/actions/) to deal with rust builds.
 
-There is a tag for each stable version for `rust >= 1.31.0` that can be referenced!
+To use different versions of rust you can reference the action via branch.
+
+## Available versions
+
+- master
+- 1.31.1
+- 1.31.0
 
 ## Quickstart
 ```
