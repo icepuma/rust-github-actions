@@ -7,6 +7,7 @@ To use different versions of rust you can reference the action via branch.
 ## Available versions
 
 - master
+- 1.32.0
 - 1.31.1
 - 1.31.0
 
