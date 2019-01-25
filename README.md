@@ -2,6 +2,8 @@
 
 [Github actions](https://developer.github.com/actions/) to deal with rust builds.
 
+:warning: [Rust Action](https://github.com/icepuma/rust-action) will replace this collection of actions in the near future! :warning:
+
 To use different versions of rust you can reference the action via branch.
 
 ## Available versions
